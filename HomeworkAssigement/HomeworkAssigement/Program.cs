@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 public class TravelingSalesmanProblem
 {
@@ -37,7 +38,7 @@ public class TravelingSalesmanProblem
             Node node = frontier.Dequeue();
             if (node.Path.Count == n)
             {
-                node.Path.Add(startCity); 
+                node.Path.Add(startCity);  // return to start city
                 return node.Path;
             }
             for (int i = 0; i < n; i++)
@@ -48,7 +49,7 @@ public class TravelingSalesmanProblem
                 }
             }
         }
-        return null; 
+        return null; // if no solution found
     }
 
     // Uniform Cost Search (UCS)
@@ -63,7 +64,7 @@ public class TravelingSalesmanProblem
             Node node = frontier.Dequeue();
             if (node.Path.Count == n)
             {
-                node.Path.Add(startCity);  
+                node.Path.Add(startCity);  // return to start city
                 return node.Path;
             }
             for (int i = 0; i < n; i++)
@@ -74,7 +75,7 @@ public class TravelingSalesmanProblem
                 }
             }
         }
-        return null; 
+        return null; // if no solution found
     }
 
     // A* Search
@@ -89,7 +90,7 @@ public class TravelingSalesmanProblem
             Node node = frontier.Dequeue();
             if (node.Path.Count == n)
             {
-                node.Path.Add(startCity);  
+                node.Path.Add(startCity);
                 return node.Path;
             }
             for (int i = 0; i < n; i++)
@@ -102,7 +103,7 @@ public class TravelingSalesmanProblem
                 }
             }
         }
-        return null; 
+        return null;
     }
 
     public static int Heuristic(int[][] distanceMatrix, int currentCity, int startCity, List<int> visitedCities)
@@ -128,14 +129,24 @@ public class TravelingSalesmanProblem
         };
         int startCity = 0;
 
+        var stopwatch = new Stopwatch();
+
+        stopwatch.Start();
         List<int> pathBFS = SolveTSP_BFS(distanceMatrix, startCity);
-        Console.WriteLine("BFS Path: " + string.Join(" -> ", pathBFS) + " with cost " + CalculatePathCost(distanceMatrix, pathBFS));
+        stopwatch.Stop();
+        Console.WriteLine("BFS Path: " + string.Join(" -> ", pathBFS) + " with cost " + CalculatePathCost(distanceMatrix, pathBFS) + " Time: " + stopwatch.ElapsedMilliseconds + "ms");
 
+        stopwatch.Reset();
+        stopwatch.Start();
         List<int> pathUCS = SolveTSP_UCS(distanceMatrix, startCity);
-        Console.WriteLine("UCS Path: " + string.Join(" -> ", pathUCS) + " with cost " + CalculatePathCost(distanceMatrix, pathUCS));
+        stopwatch.Stop();
+        Console.WriteLine("UCS Path: " + string.Join(" -> ", pathUCS) + " with cost " + CalculatePathCost(distanceMatrix, pathUCS) + " Time: " + stopwatch.ElapsedMilliseconds + "ms");
 
+        stopwatch.Reset();
+        stopwatch.Start();
         List<int> pathAStar = SolveTSP_AStar(distanceMatrix, startCity);
-        Console.WriteLine("A* Path: " + string.Join(" -> ", pathAStar) + " with cost " + CalculatePathCost(distanceMatrix, pathAStar));
+        stopwatch.Stop();
+        Console.WriteLine("A* Path: " + string.Join(" -> ", pathAStar) + " with cost " + CalculatePathCost(distanceMatrix, pathAStar) + " Time: " + stopwatch.ElapsedMilliseconds + "ms");
     }
 
     public static int CalculatePathCost(int[][] distanceMatrix, List<int> path)
