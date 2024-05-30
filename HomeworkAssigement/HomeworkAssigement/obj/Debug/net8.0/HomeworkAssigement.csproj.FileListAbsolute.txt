@@ -1,0 +1,14 @@
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\bin\Debug\net8.0\HomeworkAssigement.exe
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\bin\Debug\net8.0\HomeworkAssigement.deps.json
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\bin\Debug\net8.0\HomeworkAssigement.runtimeconfig.json
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\bin\Debug\net8.0\HomeworkAssigement.dll
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\bin\Debug\net8.0\HomeworkAssigement.pdb
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\HomeworkAssigement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\HomeworkAssigement.AssemblyInfoInputs.cache
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\HomeworkAssigement.AssemblyInfo.cs
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\HomeworkAssigement.csproj.CoreCompileInputs.cache
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\HomeworkAssigement.dll
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\refint\HomeworkAssigement.dll
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\HomeworkAssigement.pdb
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\HomeworkAssigement.genruntimeconfig.cache
+C:\Users\overd\Desktop\facultate\A.I\HomeworkAssigement\HomeworkAssigement\obj\Debug\net8.0\ref\HomeworkAssigement.dll
