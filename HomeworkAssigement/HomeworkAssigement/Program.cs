@@ -37,7 +37,7 @@ public class TravelingSalesmanProblem
             Node node = frontier.Dequeue();
             if (node.Path.Count == n)
             {
-                node.Path.Add(startCity);  // return to start city
+                node.Path.Add(startCity); 
                 return node.Path;
             }
             for (int i = 0; i < n; i++)
@@ -48,7 +48,7 @@ public class TravelingSalesmanProblem
                 }
             }
         }
-        return null; // if no solution found
+        return null; 
     }
 
     // Uniform Cost Search (UCS)
@@ -63,7 +63,7 @@ public class TravelingSalesmanProblem
             Node node = frontier.Dequeue();
             if (node.Path.Count == n)
             {
-                node.Path.Add(startCity);  // return to start city
+                node.Path.Add(startCity);  
                 return node.Path;
             }
             for (int i = 0; i < n; i++)
@@ -74,7 +74,7 @@ public class TravelingSalesmanProblem
                 }
             }
         }
-        return null; // if no solution found
+        return null; 
     }
 
     // A* Search
@@ -89,7 +89,7 @@ public class TravelingSalesmanProblem
             Node node = frontier.Dequeue();
             if (node.Path.Count == n)
             {
-                node.Path.Add(startCity);  // return to start city
+                node.Path.Add(startCity);  
                 return node.Path;
             }
             for (int i = 0; i < n; i++)
@@ -102,7 +102,7 @@ public class TravelingSalesmanProblem
                 }
             }
         }
-        return null; // if no solution found
+        return null; 
     }
 
     public static int Heuristic(int[][] distanceMatrix, int currentCity, int startCity, List<int> visitedCities)
